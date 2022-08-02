@@ -1,0 +1,96 @@
+.info-planets {
+    width: 100%;
+    margin-bottom: 47px;
+
+    @include for-size(phone-large) {
+        order: 4;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include for-size(desktop) {
+        justify-content: center;
+    }
+}
+
+.info-planets__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: map-get($color , c-white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: map-get($color , c-dark-background);
+    margin-bottom: 8px;
+    padding: 9px 24px 13px 24px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    @include for-size(small-resolution) {
+        display: flex;
+    }
+
+    @include for-size(phone-large) {
+        width: 25%;
+        display: block;
+        flex-direction: column;
+        padding: 16px 55px 19px 15px;
+        margin: 0;
+
+        &:nth-child(2) {
+            margin-left: 11px;
+        }
+
+        &:nth-child(3) {
+            margin: 0 11px;
+        }
+    }
+
+    @include for-size(desktop) {
+        width: 100%;
+        max-width: 255px;
+
+        &:nth-child(2) {
+            margin-left: 30px;
+        }
+        
+        &:nth-child(3) {
+            margin: 0 30px;
+        }
+    }
+}
+
+.content-text {
+    font-family: 'spartan' , sans-serif;
+    font-size: 0.5em;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    text-transform: uppercase;
+
+    @include for-size(phone-large) {
+        margin-bottom: 6px;
+    }
+
+    @include for-size(desktop) {
+        font-size: 0.6875em;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+    }
+}
+
+.content-info {
+    font-family: 'Antonio' , sans-serif;
+    font-size: 1.25em;
+    line-height: 25.8px;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+
+    @include for-size(desktop) {
+        font-size: 2.5em;
+        line-height: 52px;
+        letter-spacing: -1.5px;
+    }
+}

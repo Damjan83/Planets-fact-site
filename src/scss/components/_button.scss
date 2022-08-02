@@ -1,0 +1,134 @@
+.btn {
+    color: map-get($color , c-white);
+    font-size: 0.5625em;
+    text-transform: uppercase;
+    line-height: 10.08px;
+    letter-spacing: 1.93px;
+    padding: 20px 0;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    background-color: map-get($color , c-dark-background);
+    border: 0;
+
+
+    @include for-size(phone-large) {
+        width: 100%;
+        max-width: 281px;
+        border: 1px solid rgba(255, 255, 255, 0.2);   
+        line-height: 25px;   
+        padding: 8px 0; 
+        text-align: left;
+
+        &:hover {
+            background-color: map-get($color , c-grey);
+        }
+
+        &::before {
+            padding: 0 17px 0 20px;
+        }
+
+        
+        &:nth-child(1) {
+            &::before {
+                content: '01';              
+            }
+        }
+
+        &:nth-child(2) {
+            margin: 16px 0;
+            &::before {
+                content: '02';
+            }
+        }
+
+        &:nth-child(3) {
+            &::before {
+                content: '03';
+            }
+        }
+    }
+
+    @include for-size(desktop) {
+        font-size: 0.8571428571428571em;
+        letter-spacing: 2.57px;
+        max-width: 350px;
+        display: flex;
+    }
+
+    &:active {
+
+        .Mercury & {          
+            background-color: map-get($color , c-light-blue);
+        }
+
+        .Venus & {
+            background-color: map-get($color , c-yellow);
+        }  
+
+        .Earth & {
+            background-color: map-get($color , c-purple);
+        }
+
+        .Mars & {
+            background-color: map-get($color , c-dark-orange);
+        }
+
+        .Jupiter & {
+            background-color: map-get($color , c-red);
+        }
+
+        .Saturn & {
+            background-color: map-get($color , c-light-orange);
+        }
+
+        .Uranus & {
+            background-color: map-get($color , c-turquoise);
+        }
+
+        .Neptune & {
+            background-color: map-get($color , c-dark-blue);
+        }
+    }
+
+    &.is-active {
+        .Mercury & {          
+            background-color: map-get($color , c-light-blue);
+        }
+
+        .Venus & {
+            background-color: map-get($color , c-yellow);
+        }  
+
+        .Earth & {
+            background-color: map-get($color , c-purple);
+        }
+
+        .Mars & {
+            background-color: map-get($color , c-dark-orange);
+        }
+
+        .Jupiter & {
+            background-color: map-get($color , c-red);
+        }
+
+        .Saturn & {
+            background-color: map-get($color , c-light-orange);
+        }
+
+        .Uranus & {
+            background-color: map-get($color , c-turquoise);
+        }
+
+        .Neptune & {
+            background-color: map-get($color , c-dark-blue);
+        }
+    }
+}
+
+.btn-internal, .btn-geology {
+    display: none;
+
+    @include for-size(desktop) {
+        display: block;
+    }
+}

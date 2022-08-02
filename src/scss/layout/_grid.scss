@@ -1,0 +1,62 @@
+.grid-container {
+    display: inline-grid;
+
+    @include for-size(desktop) {
+        display: grid;
+    }
+}
+
+.item1 {
+    grid-row: 1;
+
+    @include for-size(phone-large) {
+        grid-row: 3;
+        grid-column: 1 / span 1;
+    }
+
+    @include for-size(desktop) {
+        grid-row: 2;  
+        grid-column: 2 / span 2;
+    }
+}
+
+.item2 {
+    grid-row: 2;
+    
+    @include for-size(phone-large) {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+    }
+
+    @include for-size(desktop) {
+        grid-row: 1 / span 2;  
+    }
+}
+
+.item3 {
+    grid-row: 3;
+    
+    @include for-size(phone-large) {
+        grid-row: 3;
+        grid-column: 1 / span 1;
+    }
+
+    @include for-size(desktop) {
+        grid-row: 1;  
+        width: 100%;
+        grid-column: 2 / span 2;
+    }
+}
+
+.item4 {
+    grid-row: 4;
+    
+    @include for-size(phone-large) {
+        grid-row: 4;
+        grid-column: 1 / span 1;
+    }
+
+    @include for-size(desktop) {
+        grid-column: 1 / span 3;  
+    }
+}

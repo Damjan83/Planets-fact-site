@@ -1,0 +1,23 @@
+.wraper {
+    width: 100%;
+    padding: 0 24px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: relative;
+
+    @include for-size(desktop) {
+        max-width: 1110px;
+        margin: 0 auto;
+        flex-direction: unset;
+        padding: 0;
+        margin-top: 126px;
+    }
+}
+
+
+.main-element {
+    &.is-active {
+        display: none;
+    }
+}
+

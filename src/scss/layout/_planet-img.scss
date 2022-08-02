@@ -1,0 +1,143 @@
+.planet {
+    width: 100%;
+    min-height: 304px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    @include for-size(phone-large) {
+        width: 100%;
+        min-height: 460px;
+        order: 0;
+    }
+
+    @include for-size(desktop) {
+        order: 1;
+        width: 50%;
+        position: relative;
+    }
+}
+
+.planet__img {
+    width: 100%;
+
+    @include for-size(desktop) {
+        width: auto;
+        max-width: 100%;
+        position: relative;
+        top: -50px;
+    }
+}
+
+.planet__img-geo {
+    width: 70px;
+    position: absolute;
+    top: 250px;
+
+    @include for-size(phone-large) {
+        width: 110px;
+        top: 290px;
+    }
+
+    @include for-size(desktop) {
+        width: 163px;
+        bottom: 87px;
+    }
+}
+
+/*------planet img size------*/
+.planet__img--mercury {
+    max-width: 111px;
+
+    @include for-size(phone-large) {
+        max-width: 184px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 290px;
+    }
+}
+
+.planet__img--venus {
+    max-width: 154px;
+
+    @include for-size(phone-large) {
+        max-width: 253px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 400px;
+    }
+}
+
+.planet__img--earth {
+    max-width: 173px;
+
+    @include for-size(phone-large) {
+        max-width: 285px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 450px;
+    }
+}
+
+.planet__img--mars {
+    max-width: 129px;
+
+    @include for-size(phone-large) {
+        max-width: 213px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 336px;
+    }
+}
+
+.planet__img--jupiter {
+    max-width: 224px;
+
+    @include for-size(phone-large) {
+        max-width: 369px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 582px;
+    }
+}
+
+.planet__img--saturn {
+    max-width: 256px;
+
+    @include for-size(phone-large) {
+        max-width: 422px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 667px;
+    }
+}
+
+.planet__img--uranus {
+    max-width: 176px;
+
+    @include for-size(phone-large) {
+        max-width: 290px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 458px;
+    }
+}
+
+.planet__img--neptune {
+    max-width: 173px;
+
+    @include for-size(phone-large) {
+        max-width: 285px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 450px;
+    }
+}

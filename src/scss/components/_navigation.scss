@@ -1,0 +1,204 @@
+.main-nav__menu {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+
+    &.is-active {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    @include for-size(phone-large) {    
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 107px;
+    }
+
+    @include for-size(desktop) {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 40px;
+        margin: 0;
+        height: 85px;
+    }
+}
+
+.main-nav__menu-item {
+    width: 100%;
+    padding: 0 24px;
+    background-color: map-get($color , c-dark-background);
+
+    &:last-child {
+        margin: 0;
+    }
+
+    @include for-size(phone-large) {    
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin-right: 33px;
+        border-top: 4px solid transparent;
+        pointer-events: auto; 
+    }
+
+    @include for-size(desktop) {    
+        width: auto;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.main-nav__menu-link {
+    font-family: 'Spartan' , sans-serif;
+    font-size: 0.9375em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 25px;
+    letter-spacing: 1.36px;
+    color: map-get($color , c-white);
+    border-bottom: 1px solid map-get($color , c-border-bottom);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+
+    @include for-size(phone-large) {    
+       border-bottom: 0;
+       font-size: 0.6875em;
+       padding: 0;
+       height: 100%;
+    }
+}
+
+.arrow-img {
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    right: 8px;
+
+    @include for-size(phone-large) {    
+        display: none;
+    }
+}
+
+/*------Color circle------*/
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 25px;
+
+    @include for-size(phone-large) {    
+        display: none;
+    }
+}
+
+.color-circle-mercury {
+    background-color: map-get($color-cirle , c-mercury);
+}
+
+.color-circle-venus {
+    background-color: map-get($color-cirle , c-venus);
+}
+
+.color-circle-earth {
+    background-color: map-get($color-cirle , c-earth);
+}
+
+.color-circle-mars {
+    background-color: map-get($color-cirle , c-mars);
+}
+
+.color-circle-jupiter {
+    background-color: map-get($color-cirle , c-jupiter);
+}
+
+.color-circle-saturn {
+    background-color: map-get($color-cirle , c-saturn);
+}
+
+.color-circle-uranus {
+    background-color: map-get($color-cirle , c-uranus);
+}
+
+.color-circle-neptune {
+    background-color: map-get($color-cirle , c-neptune);
+}
+
+
+/*------Border color on hover------*/
+.mercury-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-light-blue);
+        }
+    }
+}
+
+.venus-border-color {
+    @include for-size(desktop) { 
+        &:hover {
+            border-top: 4px solid map-get($color , c-yellow);
+        }
+    }  
+}
+
+.earth-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-purple);
+        }
+    }
+}
+
+.mars-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-dark-orange);
+        }
+    } 
+}
+
+.jupiter-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-red);
+        }
+    }
+}
+
+.saturn-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-light-orange);
+        }
+    } 
+}
+
+.uranus-border-color {
+    @include for-size(desktop) {
+        &:hover {
+            border-top: 4px solid map-get($color , c-turquoise);
+        }
+    }   
+}
+
+.neptune-border-color {
+    @include for-size(desktop) { 
+        &:hover {
+            border-top: 4px solid map-get($color , c-dark-blue);
+        }
+    } 
+}

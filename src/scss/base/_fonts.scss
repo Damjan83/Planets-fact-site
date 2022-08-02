@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Antonio-Regular';
+    src: url('/src/assets/fonts/Antonio-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/Antonio-Regular.woff') format('woff'),
+         url('/src/assets/fonts/Antonio-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antonio-Medium';
+    src: url('/src/assets/fonts/Antonio-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+     font-family: 'spartan';
+     src: url('/src/assets/fonts/spartan.woff2') format('woff2'),
+          url('/src/assets/fonts/spartan.woff') format('woff'),
+          url('/src/assets/fonts/spartan.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}

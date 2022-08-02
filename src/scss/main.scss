@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=Kumbh+Sans:wght@400;800&display=swap');
+
+//Base
+@import 'base/config';
+@import 'base/fonts';
+
+//Config
+@import 'config/_mediaQueries';
+
+//Components
+@import 'components/_header';
+@import 'components/_navigation';
+@import 'components/_burger-menu';
+@import 'components/_info-menu';
+@import 'components/_button';
+
+//Layout
+@import 'layout/_planet-img';
+@import 'layout/_wraper';
+@import 'layout/_info-text';
+@import 'layout/_info-planets';
+@import 'layout/_grid';
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+      font-size: 14px;
+      background-color: map-get($color , c-dark-background);
+      background-image: url('../assets/images/background-stars.svg');
+      background-repeat: no-repeat;
+  }
+
+  .is-hidden {
+      display: none;
+  }

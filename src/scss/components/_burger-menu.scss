@@ -1,0 +1,26 @@
+/*------Mob menu, burger menu------*/
+.main-nav__burger {
+    display: block;
+    cursor: pointer;
+
+    :nth-child(2) {
+        margin: 4px 0;
+    }
+
+    @include for-size(phone-large) {
+        display: none;
+    }
+}
+
+.main-nav__burger-line {
+    width: 24px;
+    height: 3px;
+    background-color: map-get($color, c-white);
+
+    &.is-active {
+        background-color: map-get($color , c-dark-gray);
+    }
+}
+
+
+

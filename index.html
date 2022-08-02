@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Planets</title>
+</head>
+<body>
+    <header class="header">  
+      <div class="header__title">
+        <h1 class="title-text">the planets</h1>
+      </div>     
+          
+      <div class="main-nav__burger">
+        <div class="main-nav__burger-line"></div>
+        <div class="main-nav__burger-line"></div>
+        <div class="main-nav__burger-line"></div>
+      </div>                             
+    </header>  
+    <ul class="main-nav__menu">
+      <li class="main-nav__menu-item mercury-border-color">
+        <a class="main-nav__menu-link" href="#" data-name='Mercury'>
+          <div class="color-circle color-circle-mercury"></div>
+          Mercury
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron">
+        </a>
+      </li>
+      <li class="main-nav__menu-item venus-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Venus">
+          <div class="color-circle color-circle-venus"></div>
+          Venus
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>             
+      </li>
+      <li class="main-nav__menu-item earth-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Earth">
+          <div class="color-circle color-circle-earth"></div>
+          Earth
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>
+      <li class="main-nav__menu-item mars-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Mars">
+          <div class="color-circle color-circle-mars"></div>
+          Mars
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>
+      <li class="main-nav__menu-item jupiter-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Jupiter">
+          <div class="color-circle color-circle-jupiter"></div>
+          Jupiter
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>
+      <li class="main-nav__menu-item saturn-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Saturn">
+          <div class="color-circle color-circle-saturn"></div>
+          Saturn
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>               
+      <li class="main-nav__menu-item uranus-border-color">
+            <a class="main-nav__menu-link" href="#" data-name="Uranus">
+              <div class="color-circle color-circle-uranus"></div>
+              Uranus
+              <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>               
+      <li class="main-nav__menu-item neptune-border-color">
+        <a class="main-nav__menu-link" href="#" data-name="Neptune">
+          <div class="color-circle color-circle-neptune"></div>
+          Neptun
+          <img class="arrow-img" src="./src/assets/images/icon-chevron.svg" alt="chevron"></a>
+      </li>
+    </ul> 
+    <main class="grid-container wraper main-element">
+      <div class="item1 info-menu">
+        <button class="btn" data-btn="overview">overview</button>
+        <button class="btn" data-btn="structure"><span class="btn-internal">internal&nbsp</span>structure</button>
+        <button class="btn" data-btn="geology">surface&nbsp<span class="btn-internal">geology</span></button>
+      </div>
+
+      <div class="item2 planet">
+          <img class="planet__img js-planet-img" src="" alt="planet">
+          <img class="planet__img-geo  js-planet-img-geo is-hidden" src="./src/assets/images/geology-mercury.png" alt="geology planet">
+          <!--<img class="planet__img-internal js-planet-img-internal is-hidden" src="./src/assets/images/planet-mercury-internal.svg" alt="internal mercury">-->
+      </div>   
+
+      <div class="item3 text-content">
+        <h1 class="text-content__headline js-content-name"></h1>
+        <h4 class="text-content__overview ja-content-overview"></h4>
+        <p class="text-content__source ">Source:&nbsp; <a class="source js-content-source" href="#">Wikipedia&nbsp;<img src="./src/assets/images/source.svg"></a></p>
+      </div>
+
+      <div class="item4 info-planets">
+        <div class="info-planets__content">
+          <p class="content-text">rotation time</p>
+          <p class="content-info js-rotation-time"></p>
+        </div>
+        <div class="info-planets__content">
+          <p class="content-text">revolution time</p>
+          <p class="content-info js-revolution-time"></p>
+        </div>
+        <div class="info-planets__content">
+          <p class="content-text">radius</p>
+          <p class="content-info js-radius"></p>
+        </div>
+        <div class="info-planets__content">
+          <p class="content-text">average temp.</p>
+          <p class="content-info js-average-temp"></p>
+        </div>
+      </div>
+        
+    </main>
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

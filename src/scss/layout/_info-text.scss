@@ -1,0 +1,87 @@
+.text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 28px;
+
+    @include for-size(phone-large) {
+        width: 50%;
+        order: 1;
+        text-align: left;
+    }
+
+    @include for-size(desktop) {
+        font-size: 1em;
+        order: 2;
+        margin: 0;
+        align-items: flex-end;
+    }
+}
+
+.text-content__headline {
+    width: 100%;
+    font-family: 'Antonio-Regular' , sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: map-get($color , c-white);
+    margin-bottom: 16px;
+
+    @include for-size(desktop) {
+        max-width: 350px;
+        font-family: 'Antonio-Medium' , sans-serif;
+        font-size: 5em;
+        margin-bottom: 23px;
+    }
+}
+
+.text-content__overview {
+    font-family: 'spartan' , sans-serif;
+    font-size: 0.6875em;
+    line-height: 22px;
+    font-weight: 400;
+    color: map-get($color , c-light-gray);
+    margin-bottom: 32px;
+
+    @include for-size(phone-large) {
+        font-size: 0.8214285714285714em;
+    }
+
+    @include for-size(desktop) {
+        max-width: 350px;
+        font-size: 1em;
+        line-height: 25px;
+    }
+}
+
+.text-content__source {
+    font-family: 'spartan' , sans-serif;
+    font-size: 0.75em;
+    line-height: 25px;
+    color: map-get($color , c-light-gray);
+    display: flex;
+    align-items: center;
+
+    @include for-size(phone-large) {
+        width: 100%;        
+    }
+
+    @include for-size(desktop) {
+        font-size: 0.875em;
+        max-width: 350px;
+        margin-bottom: 39px;
+    }
+}
+
+.source {
+    display: flex;
+    align-items: center;
+    color: map-get($color , c-light-gray);
+    cursor: pointer;
+
+    @include for-size(desktop) {
+        font-size: 0.875em;
+    }
+}
+
